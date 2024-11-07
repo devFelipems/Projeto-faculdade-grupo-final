@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação do Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aplicação do Clima</h1>
+        <button id="toggleDarkMode">Alternar Modo Escuro</button>
+    </header>
+
+    <main class="container">
+        <section class="weather-info">
+            <h2>Verifique o Clima</h2>
+            <p>Digite o nome de uma cidade:</p>
+            <input type="text" id="cityInput" placeholder="Ex.: São Paulo">
+            <button id="getWeatherBtn">Obter Clima</button>
+            
+            <div id="weatherData" class="hidden">
+                <h3 id="cityName"></h3>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
